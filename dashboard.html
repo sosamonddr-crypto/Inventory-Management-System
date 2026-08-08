@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StockPilot - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="nav">
+
+        <h2>📦 StockPilot</h2>
+
+        <div>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="products.html">Products</a>
+            <a href="suppliers.html">Suppliers</a>
+            <a href="login.html">Logout</a>
+        </div>
+
+    </div>
+
+    <h1>Inventory Dashboard</h1>
+
+    <div class="cards">
+
+        <div class="card">
+            Products
+            <br>
+            <b>2</b>
+        </div>
+
+        <div class="card">
+            Low Stock
+            <br>
+            <b>1</b>
+        </div>
+
+        <div class="card">
+            Suppliers
+            <br>
+            <b>8</b>
+        </div>
+
+    </div>
+
+    <div class="search">
+
+        <input type="text" placeholder="Search Product">
+
+        <select>
+            <option>All Suppliers</option>
+            <option>Tech</option>
+            <option>Global</option>
+        </select>
+
+        <a href="addproduct.html">
+            <button>Add Product</button>
+        </a>
+
+    </div>
+
+    <table>
+
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Qty</th>
+            <th>Supplier</th>
+            <th>Action</th>
+        </tr>
+
+        <tr>
+            <td>Mouse</td>
+            <td>$30</td>
+            <td>25</td>
+            <td>Tech</td>
+            <td>
+                <a href="viewproduct.html"><button>View</button></a>
+                <a href="editproduct.html"><button>Edit</button></a>
+            </td>
+        </tr>
+
+        <tr class="low">
+            <td>USB Hub</td>
+            <td>$40</td>
+            <td>3</td>
+            <td>Global</td>
+            <td>
+                <a href="viewproduct.html"><button>View</button></a>
+                <a href="editproduct.html"><button>Edit</button></a>
+            </td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
