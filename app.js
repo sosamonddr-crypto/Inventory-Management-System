@@ -12,11 +12,10 @@ const app = express();
 
 app.use(
     cors({
-        origin: "http://localhost:5173",
+        origin: "https://inventory-frontend-yzun.onrender.com",
         methods: ["GET", "POST", "PUT", "DELETE"],
     })
 );
-
 app.use(loggers);
 app.use(express.json());
 app.use("/uploads", express.static("uploads")); // serves uploaded product images
